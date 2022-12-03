@@ -12,7 +12,7 @@ void IfPolindrom(string str)
     int number = int.Parse(Console.ReadLine());
     int first = number / 1000; //находим первые 2 цифры
     int a = (number % 10) * 10;
-    int b = ((number % 100) - (number % 10)) / 10;
+    int b = ((number % 100) - (number % 10)) / 10; //Переменную b можно получить проще: number / 10 % 10.
     int last = a + b; //находим последние 2 цифры через 2 шага выше
     if (first == last)
     {

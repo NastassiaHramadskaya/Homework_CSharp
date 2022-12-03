@@ -3,7 +3,7 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-//методвы вывода кубов чисел от 1 до введенного
+//метод вывода кубов чисел от 1 до введенного
 Console.Clear();
 
 void TableOfCubed(string str)
@@ -20,8 +20,8 @@ void TableOfCubed(string str)
         Console.WriteLine("Таблица кубов для чисел от 1 до " + number + ": ");
         while (i <= number)
         {
-        Console.Write(Math.Pow(i, 3) + ", ");
-        i++;
+            Console.Write(Math.Pow(i, 3) + ", ");
+            i++;
         }
     }
     Console.WriteLine();
