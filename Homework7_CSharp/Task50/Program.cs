@@ -45,7 +45,7 @@ void PrintMatrix(int[,] matr)
 //метод поиска числа в массиве и возврата его позиции
 string FindPositionOfElement(int[,] matr, int number)
 {
-    string result = String.Empty;
+    string result = "числа нет в массиве";
     for (int i = 0; i < matr.GetLength(0); i++)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
@@ -54,10 +54,6 @@ string FindPositionOfElement(int[,] matr, int number)
             {
                 result = $"число {number} находится в {i + 1} строке, {j + 1} столбце";
                 break;
-            }
-            else
-            {
-                result = ($"числа нет в массиве");
             }
         }
     }
