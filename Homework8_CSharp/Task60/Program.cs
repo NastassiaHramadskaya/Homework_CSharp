@@ -13,7 +13,7 @@ int DataEntry(string message)
     return number;
 }
 
-//метод создания двумерного массива и заполнения случайными числами
+//метод создания трехмерного массива и заполнения случайными двузначными числами
 int[,,] Fill3DMatrix(int rows, int columns, int third, int leftRange, int rightRange)
 {
     int[,,] table = new int[rows, columns, third];
@@ -31,8 +31,8 @@ int[,,] Fill3DMatrix(int rows, int columns, int third, int leftRange, int rightR
     return table;
 }
 
-//метод вывода двумерного массива
-void PrintMatrix(int[,,] matr)
+//метод вывода трехмерного массива
+void Print3DMatrix(int[,,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
@@ -53,4 +53,4 @@ int n = DataEntry("Введите число n: ");
 int o = DataEntry("Введите число o: ");
 Console.WriteLine();
 int[,,] array = Fill3DMatrix(m, n, o, 10, 99);
-PrintMatrix(array);
+Print3DMatrix(array);
